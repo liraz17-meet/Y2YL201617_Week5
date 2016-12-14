@@ -1,7 +1,8 @@
 <html>
-
+<script type="text/javascript"></script>
 
 <head>
+
 
 <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -13,39 +14,106 @@ jquery-ui.min.js"></script>
 $(document).ready(function () {
    $('body').click(function() {
      var firstElement = $(this).first();
-     firstElement.css('background-color', 'red');
+     firstElement.css('background-color', 'pink');
 });
 });
 </script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-
-latest.min.js"></script>'''
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>'''
+
+  <meta charset="utf-8">
+  <title>Color Animation Demo</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <style>
+  
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+ 
+
+<button id="iii">change color </button>
+
 * Make sure that jQuery loaded and actually works. To do this, create a new script tag like so:
 '''<script type="text/javascript">
   $(document).ready(function () {
         alert('i love cats');
   });
+ $( function() {
+    $( "#post1" ).draggable();
+  } );
+ $( function() {
+    $( "#post2" ).draggable();
+  } );
+ $( function() {
+    $( "#post3" ).draggable();
+  } );
+
+ $( "#iii" ).click(function() {
+  $( "#post1" ).animate({
+    color: "#eec0c6",
+    backgroundColor: "gray"
+  });
+});
+
+
+ $( "#iii" ).click(function() {
+  $( "#post2" ).animate({
+    color: "rgb(153, 204, 255)",
+    backgroundColor: "gray"
+  });
+});
+
+
+ $( "#iii" ).click(function() {
+  $( "#post3" ).animate({
+    color: "#fff0bf",
+    backgroundColor: "gray"
+  });
+});
+ 
+
+ 
+
+
 </script>
+ 
 
 <body>
 <h1> Welcome to GeekBook</h1>
 
-<div class = "posts">
+<div class = "posts" id="post1">
   <h3>Laura</h3>
   <img src='images/avatar1.jpg'>
 <p> I Love MEET! </p>
+
 </div>
 
-<div class = "posts">
+<div class = "posts" id="post2">
   <h3>Ryan</h3>
   <img src='images/avatar2.png'>
 <p> What time is lunch? </p>
 </div>
 
-<div class = "posts">
+<div class = "posts" id="post3">
   <h3>Lorenzo</h3>
   <img src='images/avatar3.jpg'>
 <p>You'll be a web dev ninja in no time!</p>
 </div>
+
+ 
+
 
 </body>
 
